@@ -9,17 +9,11 @@
 /* Begin PBXBuildFile section */
 		6304D6FE1D5F986A00CE6C99 /* PMKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6304D6FD1D5F986A00CE6C99 /* PMKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		630B2E161D5D0B3200DC10E9 /* TestUIImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630B2DF71D5D0AD400DC10E9 /* TestUIImagePickerController.swift */; };
-		6332142B1D83CD17009F67CE /* TestUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332142A1D83CD17009F67CE /* TestUIView.swift */; };
-		637E2C7D1D5C2E0B0043E370 /* PMKAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E2C701D5C2E0B0043E370 /* PMKAlertController.swift */; };
-		637E2C841D5C2E0B0043E370 /* UIView+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 637E2C771D5C2E0B0043E370 /* UIView+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		637E2C851D5C2E0B0043E370 /* UIView+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E2C781D5C2E0B0043E370 /* UIView+AnyPromise.m */; };
-		637E2C861D5C2E0B0043E370 /* UIView+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E2C791D5C2E0B0043E370 /* UIView+Promise.swift */; };
+		63291E771E5D18CF00C81FDD /* PromiseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63291E541E5D17A300C81FDD /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		637E2C871D5C2E0B0043E370 /* UIViewController+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 637E2C7A1D5C2E0B0043E370 /* UIViewController+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		637E2C881D5C2E0B0043E370 /* UIViewController+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E2C7B1D5C2E0B0043E370 /* UIViewController+AnyPromise.m */; };
-		637E2C891D5C2E0B0043E370 /* UIViewController+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E2C7C1D5C2E0B0043E370 /* UIViewController+Promise.swift */; };
 		637E2C951D5C2E720043E370 /* TestUIImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E2C8E1D5C2E720043E370 /* TestUIImagePickerController.swift */; };
 		637E2C961D5C2E720043E370 /* TestUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E2C8F1D5C2E720043E370 /* TestUIViewController.m */; };
-		637E2C971D5C2E720043E370 /* TestUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E2C901D5C2E720043E370 /* TestUIViewController.swift */; };
 		637E2C9B1D5C2F600043E370 /* infrastructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E2C9A1D5C2F600043E370 /* infrastructure.swift */; };
 		63A686811D88E93300D1C66B /* UIImagePickerController+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6867E1D88E93300D1C66B /* UIImagePickerController+Promise.swift */; };
 		63C7FFF71D5C020D003BAE60 /* PMKUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C7FFA71D5BEE09003BAE60 /* PMKUIKit.framework */; };
@@ -30,6 +24,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		63291E531E5D17A300C81FDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63291E4D1E5D17A300C81FDD /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63B0AC571D595E1B00FA21D9;
+			remoteInfo = PromiseKit;
+		};
+		63291E551E5D17A300C81FDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63291E4D1E5D17A300C81FDD /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 631751A81D59766500A9DDDC;
+			remoteInfo = "PMKA+Tests";
+		};
+		63291E571E5D17A300C81FDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63291E4D1E5D17A300C81FDD /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 630019221D596292003B4E30;
+			remoteInfo = PMKCoreTests;
+		};
+		63291E591E5D17AB00C81FDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63291E4D1E5D17A300C81FDD /* PromiseKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 63B0AC561D595E1B00FA21D9;
+			remoteInfo = PromiseKit;
+		};
 		63C7FFF81D5C020D003BAE60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 63C7FF9E1D5BEE09003BAE60 /* Project object */;
@@ -67,6 +89,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				63291E771E5D18CF00C81FDD /* PromiseKit.framework in Embed Frameworks */,
 				63C9C45F1D5D341600101ECE /* PMKUIKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -79,23 +102,18 @@
 		630B2DF41D5D0AD400DC10E9 /* app.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = app.swift; path = UITests/app.swift; sourceTree = "<group>"; };
 		630B2DF51D5D0AD400DC10E9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "UITests/Default-568h@2x.png"; sourceTree = "<group>"; };
 		630B2DF71D5D0AD400DC10E9 /* TestUIImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestUIImagePickerController.swift; path = UITests/TestUIImagePickerController.swift; sourceTree = "<group>"; };
-		630B2E131D5D0AF500DC10E9 /* PMKUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PMKUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6332142A1D83CD17009F67CE /* TestUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestUIView.swift; path = Tests/TestUIView.swift; sourceTree = SOURCE_ROOT; };
-		637E2C701D5C2E0B0043E370 /* PMKAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PMKAlertController.swift; path = Sources/PMKAlertController.swift; sourceTree = SOURCE_ROOT; };
-		637E2C771D5C2E0B0043E370 /* UIView+AnyPromise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+AnyPromise.h"; path = "Sources/UIView+AnyPromise.h"; sourceTree = SOURCE_ROOT; };
-		637E2C781D5C2E0B0043E370 /* UIView+AnyPromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnyPromise.m"; path = "Sources/UIView+AnyPromise.m"; sourceTree = SOURCE_ROOT; };
-		637E2C791D5C2E0B0043E370 /* UIView+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Promise.swift"; path = "Sources/UIView+Promise.swift"; sourceTree = SOURCE_ROOT; };
+		630B2E131D5D0AF500DC10E9 /* PMKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PMKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63291DF11E5CE17D00C81FDD /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = SOURCE_ROOT; };
+		63291E4D1E5D17A300C81FDD /* PromiseKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PromiseKit.xcodeproj; path = ../../PromiseKit.xcodeproj; sourceTree = "<group>"; };
 		637E2C7A1D5C2E0B0043E370 /* UIViewController+AnyPromise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AnyPromise.h"; path = "Sources/UIViewController+AnyPromise.h"; sourceTree = SOURCE_ROOT; };
 		637E2C7B1D5C2E0B0043E370 /* UIViewController+AnyPromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AnyPromise.m"; path = "Sources/UIViewController+AnyPromise.m"; sourceTree = SOURCE_ROOT; };
-		637E2C7C1D5C2E0B0043E370 /* UIViewController+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Promise.swift"; path = "Sources/UIViewController+Promise.swift"; sourceTree = SOURCE_ROOT; };
 		637E2C8E1D5C2E720043E370 /* TestUIImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestUIImagePickerController.swift; path = Tests/TestUIImagePickerController.swift; sourceTree = SOURCE_ROOT; };
 		637E2C8F1D5C2E720043E370 /* TestUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestUIViewController.m; path = Tests/TestUIViewController.m; sourceTree = SOURCE_ROOT; };
-		637E2C901D5C2E720043E370 /* TestUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestUIViewController.swift; path = Tests/TestUIViewController.swift; sourceTree = SOURCE_ROOT; };
 		637E2C9A1D5C2F600043E370 /* infrastructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = infrastructure.swift; path = Tests/infrastructure.swift; sourceTree = SOURCE_ROOT; };
 		63A6867E1D88E93300D1C66B /* UIImagePickerController+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImagePickerController+Promise.swift"; path = "Sources/UIImagePickerController+Promise.swift"; sourceTree = SOURCE_ROOT; };
 		63C700091D5C0253003BAE60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63C7FFA71D5BEE09003BAE60 /* PMKUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PMKUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		63C7FFF21D5C020D003BAE60 /* PMKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PMKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C7FFF21D5C020D003BAE60 /* PMKUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PMKUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C9C4451D5D334700101ECE /* PMKTestsHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PMKTestsHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CCF8121D5C0C4E00503216 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		63CCF8171D5C11B500503216 /* Carthage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Carthage.xcconfig; sourceTree = "<group>"; };
@@ -145,9 +163,20 @@
 			name = TestsHost;
 			sourceTree = "<group>";
 		};
+		63291E4E1E5D17A300C81FDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63291E541E5D17A300C81FDD /* PromiseKit.framework */,
+				63291E561E5D17A300C81FDD /* PMKA+Tests.xctest */,
+				63291E581E5D17A300C81FDD /* PMKCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		63C7FF9D1D5BEE09003BAE60 = {
 			isa = PBXGroup;
 			children = (
+				63291DF11E5CE17D00C81FDD /* README.markdown */,
 				63C700091D5C0253003BAE60 /* Info.plist */,
 				63CCF8121D5C0C4E00503216 /* Cartfile */,
 				63CCF8171D5C11B500503216 /* Carthage.xcconfig */,
@@ -155,6 +184,7 @@
 				63C7FFF31D5C020D003BAE60 /* Tests */,
 				630B2DF31D5D0ABF00DC10E9 /* TestsHost */,
 				63C7FFA81D5BEE09003BAE60 /* Products */,
+				63291E4D1E5D17A300C81FDD /* PromiseKit.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,8 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				63C7FFA71D5BEE09003BAE60 /* PMKUIKit.framework */,
-				63C7FFF21D5C020D003BAE60 /* PMKUITests.xctest */,
-				630B2E131D5D0AF500DC10E9 /* PMKUIUITests.xctest */,
+				63C7FFF21D5C020D003BAE60 /* PMKUIKitTests.xctest */,
+				630B2E131D5D0AF500DC10E9 /* PMKUITests.xctest */,
 				63C9C4451D5D334700101ECE /* PMKTestsHost.app */,
 			);
 			name = Products;
@@ -173,13 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				6304D6FD1D5F986A00CE6C99 /* PMKUIKit.h */,
-				637E2C701D5C2E0B0043E370 /* PMKAlertController.swift */,
-				637E2C771D5C2E0B0043E370 /* UIView+AnyPromise.h */,
-				637E2C781D5C2E0B0043E370 /* UIView+AnyPromise.m */,
-				637E2C791D5C2E0B0043E370 /* UIView+Promise.swift */,
 				637E2C7A1D5C2E0B0043E370 /* UIViewController+AnyPromise.h */,
 				637E2C7B1D5C2E0B0043E370 /* UIViewController+AnyPromise.m */,
-				637E2C7C1D5C2E0B0043E370 /* UIViewController+Promise.swift */,
 				63A6867E1D88E93300D1C66B /* UIImagePickerController+Promise.swift */,
 			);
 			name = Sources;
@@ -189,10 +214,8 @@
 		63C7FFF31D5C020D003BAE60 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				637E2C8E1D5C2E720043E370 /* TestUIImagePickerController.swift */,
 				637E2C8F1D5C2E720043E370 /* TestUIViewController.m */,
-				637E2C901D5C2E720043E370 /* TestUIViewController.swift */,
-				6332142A1D83CD17009F67CE /* TestUIView.swift */,
+				637E2C8E1D5C2E720043E370 /* TestUIImagePickerController.swift */,
 				637E2C9A1D5C2F600043E370 /* infrastructure.swift */,
 			);
 			name = Tests;
@@ -208,16 +231,15 @@
 			files = (
 				6304D6FE1D5F986A00CE6C99 /* PMKUIKit.h in Headers */,
 				637E2C871D5C2E0B0043E370 /* UIViewController+AnyPromise.h in Headers */,
-				637E2C841D5C2E0B0043E370 /* UIView+AnyPromise.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		630B2DFF1D5D0AF500DC10E9 /* PMKUIUITests */ = {
+		630B2DFF1D5D0AF500DC10E9 /* PMKUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 630B2E101D5D0AF500DC10E9 /* Build configuration list for PBXNativeTarget "PMKUIUITests" */;
+			buildConfigurationList = 630B2E101D5D0AF500DC10E9 /* Build configuration list for PBXNativeTarget "PMKUITests" */;
 			buildPhases = (
 				630B2E041D5D0AF500DC10E9 /* Sources */,
 				630B2E0D1D5D0AF500DC10E9 /* Frameworks */,
@@ -227,9 +249,9 @@
 			dependencies = (
 				63C9C45A1D5D33A900101ECE /* PBXTargetDependency */,
 			);
-			name = PMKUIUITests;
+			name = PMKUITests;
 			productName = PMKUIUITests;
-			productReference = 630B2E131D5D0AF500DC10E9 /* PMKUIUITests.xctest */;
+			productReference = 630B2E131D5D0AF500DC10E9 /* PMKUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		63C7FFA61D5BEE09003BAE60 /* PMKUIKit */ = {
@@ -243,19 +265,19 @@
 			buildRules = (
 			);
 			dependencies = (
+				63291E5A1E5D17AB00C81FDD /* PBXTargetDependency */,
 			);
 			name = PMKUIKit;
 			productName = PMKUIKit;
 			productReference = 63C7FFA71D5BEE09003BAE60 /* PMKUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		63C7FFF11D5C020D003BAE60 /* PMKUITests */ = {
+		63C7FFF11D5C020D003BAE60 /* PMKUIKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63C7FFFA1D5C020D003BAE60 /* Build configuration list for PBXNativeTarget "PMKUITests" */;
+			buildConfigurationList = 63C7FFFA1D5C020D003BAE60 /* Build configuration list for PBXNativeTarget "PMKUIKitTests" */;
 			buildPhases = (
 				63C7FFEE1D5C020D003BAE60 /* Sources */,
 				63C7FFEF1D5C020D003BAE60 /* Frameworks */,
-				6332EC8D1D5D085F00480270 /* Embed Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,9 +285,9 @@
 				63C7FFF91D5C020D003BAE60 /* PBXTargetDependency */,
 				63C9C45C1D5D33AB00101ECE /* PBXTargetDependency */,
 			);
-			name = PMKUITests;
+			name = PMKUIKitTests;
 			productName = PMKUITests;
-			productReference = 63C7FFF21D5C020D003BAE60 /* PMKUITests.xctest */;
+			productReference = 63C7FFF21D5C020D003BAE60 /* PMKUIKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		63C9C4441D5D334700101ECE /* PMKTestsHost */ = {
@@ -275,7 +297,6 @@
 				63C9C4411D5D334700101ECE /* Sources */,
 				63C9C4421D5D334700101ECE /* Frameworks */,
 				63C9C4431D5D334700101ECE /* Resources */,
-				63C9C45D1D5D33E700101ECE /* Embed Carthage Frameworks */,
 				63C9C4621D5D341600101ECE /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -295,7 +316,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Max Howell";
 				TargetAttributes = {
 					630B2DFF1D5D0AF500DC10E9 = {
@@ -329,15 +350,45 @@
 			mainGroup = 63C7FF9D1D5BEE09003BAE60;
 			productRefGroup = 63C7FFA81D5BEE09003BAE60 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 63291E4E1E5D17A300C81FDD /* Products */;
+					ProjectRef = 63291E4D1E5D17A300C81FDD /* PromiseKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				63C7FFA61D5BEE09003BAE60 /* PMKUIKit */,
-				63C7FFF11D5C020D003BAE60 /* PMKUITests */,
-				630B2DFF1D5D0AF500DC10E9 /* PMKUIUITests */,
+				63C7FFF11D5C020D003BAE60 /* PMKUIKitTests */,
+				630B2DFF1D5D0AF500DC10E9 /* PMKUITests */,
 				63C9C4441D5D334700101ECE /* PMKTestsHost */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		63291E541E5D17A300C81FDD /* PromiseKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PromiseKit.framework;
+			remoteRef = 63291E531E5D17A300C81FDD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		63291E561E5D17A300C81FDD /* PMKA+Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "PMKA+Tests.xctest";
+			remoteRef = 63291E551E5D17A300C81FDD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		63291E581E5D17A300C81FDD /* PMKCoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PMKCoreTests.xctest;
+			remoteRef = 63291E571E5D17A300C81FDD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		63C9C4431D5D334700101ECE /* Resources */ = {
@@ -349,39 +400,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6332EC8D1D5D085F00480270 /* Embed Carthage Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				PromiseKit,
-			);
-			name = "Embed Carthage Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "case \"$PLATFORM_NAME\" in\nmacosx) plat=Mac;;\niphone*) plat=iOS;;\nwatch*) plat=watchOS;;\nappletv*) plat=tvOS;;\n*) echo \"error: Unknown PLATFORM_NAME: $PLATFORM_NAME\"; exit 1;;\nesac\nfor (( n = 0; n < SCRIPT_INPUT_FILE_COUNT; n++ )); do\nVAR=SCRIPT_INPUT_FILE_$n\nframework=$(basename \"${!VAR}\")\nexport SCRIPT_INPUT_FILE_$n=\"$SRCROOT\"/Carthage/Build/$plat/\"$framework\".framework\ndone\n\n/usr/local/bin/carthage copy-frameworks || exit\n\nfor (( n = 0; n < SCRIPT_INPUT_FILE_COUNT; n++ )); do\nVAR=SCRIPT_INPUT_FILE_$n\nsource=${!VAR}.dSYM\ndest=${BUILT_PRODUCTS_DIR}/$(basename \"$source\")\nditto \"$source\" \"$dest\" || exit\ndone";
-		};
-		63C9C45D1D5D33E700101ECE /* Embed Carthage Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				PromiseKit,
-			);
-			name = "Embed Carthage Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "case \"$PLATFORM_NAME\" in\nmacosx) plat=Mac;;\niphone*) plat=iOS;;\nwatch*) plat=watchOS;;\nappletv*) plat=tvOS;;\n*) echo \"error: Unknown PLATFORM_NAME: $PLATFORM_NAME\"; exit 1;;\nesac\nfor (( n = 0; n < SCRIPT_INPUT_FILE_COUNT; n++ )); do\nVAR=SCRIPT_INPUT_FILE_$n\nframework=$(basename \"${!VAR}\")\nexport SCRIPT_INPUT_FILE_$n=\"$SRCROOT\"/Carthage/Build/$plat/\"$framework\".framework\ndone\n\n/usr/local/bin/carthage copy-frameworks || exit\n\nfor (( n = 0; n < SCRIPT_INPUT_FILE_COUNT; n++ )); do\nVAR=SCRIPT_INPUT_FILE_$n\nsource=${!VAR}.dSYM\ndest=${BUILT_PRODUCTS_DIR}/$(basename \"$source\")\nditto \"$source\" \"$dest\" || exit\ndone";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		630B2E041D5D0AF500DC10E9 /* Sources */ = {
@@ -397,10 +415,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				63A686811D88E93300D1C66B /* UIImagePickerController+Promise.swift in Sources */,
-				637E2C7D1D5C2E0B0043E370 /* PMKAlertController.swift in Sources */,
-				637E2C861D5C2E0B0043E370 /* UIView+Promise.swift in Sources */,
-				637E2C891D5C2E0B0043E370 /* UIViewController+Promise.swift in Sources */,
-				637E2C851D5C2E0B0043E370 /* UIView+AnyPromise.m in Sources */,
 				637E2C881D5C2E0B0043E370 /* UIViewController+AnyPromise.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,10 +424,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				637E2C951D5C2E720043E370 /* TestUIImagePickerController.swift in Sources */,
-				637E2C971D5C2E720043E370 /* TestUIViewController.swift in Sources */,
 				637E2C961D5C2E720043E370 /* TestUIViewController.m in Sources */,
 				637E2C9B1D5C2F600043E370 /* infrastructure.swift in Sources */,
-				6332142B1D83CD17009F67CE /* TestUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +440,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		63291E5A1E5D17AB00C81FDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromiseKit;
+			targetProxy = 63291E591E5D17AB00C81FDD /* PBXContainerItemProxy */;
+		};
 		63C7FFF91D5C020D003BAE60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 63C7FFA61D5BEE09003BAE60 /* PMKUIKit */;
@@ -504,6 +521,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -561,6 +579,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -692,7 +711,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		630B2E101D5D0AF500DC10E9 /* Build configuration list for PBXNativeTarget "PMKUIUITests" */ = {
+		630B2E101D5D0AF500DC10E9 /* Build configuration list for PBXNativeTarget "PMKUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				630B2E111D5D0AF500DC10E9 /* Debug */,
@@ -719,7 +738,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63C7FFFA1D5C020D003BAE60 /* Build configuration list for PBXNativeTarget "PMKUITests" */ = {
+		63C7FFFA1D5C020D003BAE60 /* Build configuration list for PBXNativeTarget "PMKUIKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63C7FFFB1D5C020D003BAE60 /* Debug */,

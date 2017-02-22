@@ -1,10 +1,7 @@
+#import <UIKit/UIImagePickerController.h>
 #import <UIKit/UINavigationController.h>
 #import "UIViewController+AnyPromise.h"
 #import <PromiseKit/PromiseKit.h>
-
-#if PMKImagePickerController
-#import <UIKit/UIImagePickerController.h>
-#endif
 
 @interface PMKGenericDelegate : NSObject <UINavigationControllerDelegate> {
 @public
@@ -29,7 +26,7 @@
         PMKGenericDelegate *delegate = [PMKGenericDelegate delegateWithPromise:&promise];
         [vc setValue:delegate forKey:@"messageComposeDelegate"];
     }
-#ifdef PMKImagePickerController
+#if !TARGET_OS_TV
     else if ([vc isKindOfClass:[UIImagePickerController class]]) {
         PMKGenericDelegate *delegate = [PMKGenericDelegate delegateWithPromise:&promise];
         [vc setValue:delegate forKey:@"delegate"];
@@ -40,7 +37,7 @@
         promise = [[AnyPromise alloc] initWithResolver:&resolve];
         [vc setValue:^(NSInteger result){
             if (result == 0) {
-                resolve([NSError cancelledError]);
+                resolve([NSError pmk_cancelledError]);
             } else {
                 resolve(@(result));
             }
@@ -76,7 +73,7 @@
 
     [self presentViewController:vc2present animated:animated completion:block];
 
-    promise.always(^{
+    promise.ensure(^{
         [vc2present.presentingViewController dismissViewControllerAnimated:animated completion:nil];
     });
 
@@ -102,7 +99,7 @@
     if (error != nil) {
         resolve(error);
     } else if (result == 0) {
-        resolve([NSError cancelledError]);
+        resolve([NSError pmk_cancelledError]);
     } else {
         resolve(@(result));
     }
@@ -120,8 +117,7 @@
     retainCycle = nil;
 }
 
-#ifdef PMKImagePickerController
-
+#if !TARGET_OS_TV
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     id img = info[UIImagePickerControllerEditedImage] ?: info[UIImagePickerControllerOriginalImage];
     resolve(PMKManifold(img, info));
@@ -129,10 +125,9 @@
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    resolve([NSError cancelledError]);
+    resolve([NSError pmk_cancelledError]);
     retainCycle = nil;
 }
-
 #endif
 
 @end

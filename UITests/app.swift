@@ -49,7 +49,7 @@ class App: UITableViewController, UIApplicationDelegate {
         case .ImagePickerCancel:
             let p: Promise<UIImage> = promise(UIImagePickerController())
             p.catch(policy: .allErrors) { error in
-                guard (error as! CancellableError).isCancelled else { abort() }
+                guard error.isCancelled else { abort() }
                 self.success()
             }
             p.catch { error in
